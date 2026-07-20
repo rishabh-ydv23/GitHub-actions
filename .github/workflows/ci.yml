@@ -44,7 +44,7 @@ jobs:
         - name: Build and push docker image
           uses: docker/build-push-action@v5
           with:
-            context: .
+            context: .    #current library se docker file
             push: true
             no-cache: true
             tags: ${{ secrets.DOCKER_USERNAME }}/my-calc-image:latest
